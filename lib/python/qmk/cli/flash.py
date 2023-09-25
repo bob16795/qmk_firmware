@@ -107,6 +107,7 @@ def flash(cli):
     if not cli.args.dry_run:
         cli.echo('\n')
         for command in commands:
+            cli.log.info(command)
             ret = cli.run(command, capture_output=False)
             if ret.returncode:
                 return ret.returncode

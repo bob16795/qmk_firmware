@@ -32,7 +32,7 @@
 #define RGB_MATRIX_LED_COUNT 47
 #define RGBLED_NUM 47
 #    define RGB_MATRIX_KEYPRESSES // reacts to keypresses
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS  
+#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #    define RGBLIGHT_LIMIT_VAL 150
 #ifdef RGB_MATRIX_ENABLE
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
@@ -97,3 +97,7 @@
 /* Bootmagic Lite key configuration */
 #define BOOTMAGIC_LITE_ROW 0
 #define BOOTMAGIC_LITE_COLUMN 0
+
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_MAX_LAYERS 4
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
