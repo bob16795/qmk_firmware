@@ -3,10 +3,6 @@
 
 #pragma once
 
-#include "config_common.h"
-
-#define DYNAMIC_KEYMAP_LAYER_COUNT 10
-
 #ifdef OLED_ENABLE
 #    define OLED_DISPLAY_128X32
 #define I2C1_SCL_PIN        GP17
@@ -17,18 +13,6 @@
 #endif
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 12
-
-#define DIODE_DIRECTION COL2ROW
-
-#define MATRIX_ROW_PINS { GP21, GP20, GP19, GP18 }
-#define MATRIX_COL_PINS { GP1, GP2, GP3, GP4, GP5, GP6, GP7, GP8, GP9, GP10, GP11, GP12 }
-
-#define ENCODERS_PAD_A { GP14 }
-#define ENCODERS_PAD_B { GP13 }
-
-#define RGB_DI_PIN GP0
 #define RGB_MATRIX_LED_COUNT 47
 #define RGBLED_NUM 47
 #    define RGB_MATRIX_KEYPRESSES // reacts to keypresses
@@ -98,6 +82,3 @@
 #define BOOTMAGIC_LITE_ROW 0
 #define BOOTMAGIC_LITE_COLUMN 0
 
-#define RGBLIGHT_LAYERS
-#define RGBLIGHT_MAX_LAYERS 4
-#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
